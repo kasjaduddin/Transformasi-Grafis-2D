@@ -1,0 +1,10 @@
+C:\Uddin\Project\tugas\TVG\Tugas 1\Transformasi-Grafis-2D\GraphicsTransformationApp\bin\Debug\GraphicsTransformationApp.exe.config
+C:\Uddin\Project\tugas\TVG\Tugas 1\Transformasi-Grafis-2D\GraphicsTransformationApp\bin\Debug\GraphicsTransformationApp.exe
+C:\Uddin\Project\tugas\TVG\Tugas 1\Transformasi-Grafis-2D\GraphicsTransformationApp\bin\Debug\GraphicsTransformationApp.pdb
+C:\Uddin\Project\tugas\TVG\Tugas 1\Transformasi-Grafis-2D\GraphicsTransformationApp\obj\Debug\GraphicsTransformationApp.csproj.AssemblyReference.cache
+C:\Uddin\Project\tugas\TVG\Tugas 1\Transformasi-Grafis-2D\GraphicsTransformationApp\obj\Debug\GraphicsTransformationApp.Form1.resources
+C:\Uddin\Project\tugas\TVG\Tugas 1\Transformasi-Grafis-2D\GraphicsTransformationApp\obj\Debug\GraphicsTransformationApp.Properties.Resources.resources
+C:\Uddin\Project\tugas\TVG\Tugas 1\Transformasi-Grafis-2D\GraphicsTransformationApp\obj\Debug\GraphicsTransformationApp.csproj.GenerateResource.cache
+C:\Uddin\Project\tugas\TVG\Tugas 1\Transformasi-Grafis-2D\GraphicsTransformationApp\obj\Debug\GraphicsTransformationApp.csproj.CoreCompileInputs.cache
+C:\Uddin\Project\tugas\TVG\Tugas 1\Transformasi-Grafis-2D\GraphicsTransformationApp\obj\Debug\GraphicsTransformationApp.exe
+C:\Uddin\Project\tugas\TVG\Tugas 1\Transformasi-Grafis-2D\GraphicsTransformationApp\obj\Debug\GraphicsTransformationApp.pdb
