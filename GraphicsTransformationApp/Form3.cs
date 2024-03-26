@@ -19,8 +19,7 @@ namespace GraphicsTransformationApp
 
         public static int scaleX;
         public static int scaleY;
-
-        private void enterTranslation_Click(object sender, EventArgs e)
+        private void enterScale_Click(object sender, EventArgs e)
         {
             scaleX = Convert.ToInt32(inptScaleX.Text);
             scaleY = Convert.ToInt32(inptScaleY.Text);

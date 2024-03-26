@@ -26,7 +26,5 @@ namespace GraphicsTransformationApp
             translationY = Convert.ToInt32(inptTranslationY.Text);
             this.Close();
         }
-
-        
     }
 }

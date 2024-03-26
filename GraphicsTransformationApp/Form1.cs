@@ -25,6 +25,7 @@ namespace GraphicsTransformationApp
         private Graphics g;
         private bool paint = false;
         private Pen pen = new Pen(Color.DarkBlue, 1);
+        private Pen pen1 = new Pen(Color.Magenta, 1);
         private int index;
         private int transform;
         private int x, y, sX, sY, cX, cY;
@@ -88,41 +89,38 @@ namespace GraphicsTransformationApp
         {
             Form2 form2 = new Form2();
             form2.Show();
-            transform = 1;
+            form2.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form2_FormClosed);
         }
 
         private void buttonScale_Click(object sender, EventArgs e)
         {
             Form3 form3 = new Form3();
             form3.Show();
-            transform = 2;
+            form3.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form3_FormClosed);
         }
 
         private void Form2_FormClosed(object sender, FormClosedEventArgs e)
         {
             cX1 += Form2.translationX;
             cY1 += Form2.translationY;
+            transformation();
         }
 
+        private void Form3_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            sX1 *= Form3.scaleX;
+            sY1 *= Form3.scaleY;
+            transformation();
+        }
         private void transformation()
         {
-            if (transform == 1)
-            {
-                cX1 += Form2.translationX;
-                cY1 += Form2.translationY;
-            }
-            else if (transform == 1)
-            {
-                sX1 *= Form3.scaleX;
-                sY1 *= Form3.scaleY;
-            }
             if (index == 1)
             {
-                g.DrawEllipse(pen, cX, cY, sX, sY);
+                g.DrawEllipse(pen1, cX1, cY1, sX1, sY1);
             }
             else if (index == 2)
             {
-                g.DrawRectangle(pen, cX, cY, sX, sY);
+                g.DrawRectangle(pen1, cX1, cY1, sX1, sY1);
             }
         }
     }

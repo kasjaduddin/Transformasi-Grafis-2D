@@ -75,6 +75,7 @@
             this.enterScale.TabIndex = 5;
             this.enterScale.Text = "Submit";
             this.enterScale.UseVisualStyleBackColor = true;
+            this.enterScale.Click += new System.EventHandler(this.enterScale_Click);
             // 
             // Form3
             // 
