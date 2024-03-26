@@ -103,13 +103,25 @@ namespace GraphicsTransformationApp
         {
             cX1 += Form2.translationX;
             cY1 += Form2.translationY;
+            Form2.translationX = Form2.translationY = 0;
             transformation();
         }
 
         private void Form3_FormClosed(object sender, FormClosedEventArgs e)
         {
+            int midX = sX1 / 2;
+            int midY = sY1 / 2;
             sX1 *= Form3.scaleX;
             sY1 *= Form3.scaleY;
+            if (Form3.scaleX != 1)
+            {
+                cX1 = cX1 + midX - (sX1 / 2);
+            }
+            if (Form3.scaleY != 1)
+            {
+                cY1 = cY1 + midY - (sY1 / 2);
+            }
+            Form3.scaleX = Form3.scaleY = 1;
             transformation();
         }
         private void transformation()

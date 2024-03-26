@@ -23,7 +23,7 @@ namespace GraphicsTransformationApp
         private void enterTranslation_Click(object sender, EventArgs e)
         {
             translationX = Convert.ToInt32(inptTranslationX.Text);
-            translationY = Convert.ToInt32(inptTranslationY.Text);
+            translationY = -Convert.ToInt32(inptTranslationY.Text);
             this.Close();
         }
     }
