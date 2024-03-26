@@ -21,14 +21,15 @@ namespace GraphicsTransformationApp
             Canvas.Image = bm;
         }
 
-        Bitmap bm;
-        Graphics g;
-        bool paint = false;
-        Pen pen = new Pen(Color.DarkBlue, 1);
-        int index;
-        int x, y, sX, sY, cX, cY;
-        bool canDraw = true;
-        int sX1, sY1, cX1, cY1;
+        private Bitmap bm;
+        private Graphics g;
+        private bool paint = false;
+        private Pen pen = new Pen(Color.DarkBlue, 1);
+        private int index;
+        private int transform;
+        private int x, y, sX, sY, cX, cY;
+        private bool canDraw = true;
+        private int sX1, sY1, cX1, cY1;
 
         private void Canvas_MouseDown(object sender, MouseEventArgs e)
         {
@@ -81,6 +82,48 @@ namespace GraphicsTransformationApp
         private void buttonRectangle_Click(object sender, EventArgs e)
         {
             index = 2;
+        }
+
+        private void buttonTranslation_Click(object sender, EventArgs e)
+        {
+            Form2 form2 = new Form2();
+            form2.Show();
+            transform = 1;
+        }
+
+        private void buttonScale_Click(object sender, EventArgs e)
+        {
+            Form3 form3 = new Form3();
+            form3.Show();
+            transform = 2;
+        }
+
+        private void Form2_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            cX1 += Form2.translationX;
+            cY1 += Form2.translationY;
+        }
+
+        private void transformation()
+        {
+            if (transform == 1)
+            {
+                cX1 += Form2.translationX;
+                cY1 += Form2.translationY;
+            }
+            else if (transform == 1)
+            {
+                sX1 *= Form3.scaleX;
+                sY1 *= Form3.scaleY;
+            }
+            if (index == 1)
+            {
+                g.DrawEllipse(pen, cX, cY, sX, sY);
+            }
+            else if (index == 2)
+            {
+                g.DrawRectangle(pen, cX, cY, sX, sY);
+            }
         }
     }
 }

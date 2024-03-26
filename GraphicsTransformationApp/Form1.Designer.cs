@@ -77,6 +77,7 @@
             this.buttonScale.TabIndex = 3;
             this.buttonScale.Text = "Scale";
             this.buttonScale.UseVisualStyleBackColor = false;
+            this.buttonScale.Click += new System.EventHandler(this.buttonScale_Click);
             // 
             // buttonRectangle
             // 
@@ -98,6 +99,7 @@
             this.buttonTranslation.TabIndex = 1;
             this.buttonTranslation.Text = "Translation";
             this.buttonTranslation.UseVisualStyleBackColor = false;
+            this.buttonTranslation.Click += new System.EventHandler(this.buttonTranslation_Click);
             // 
             // buttonElips
             // 
